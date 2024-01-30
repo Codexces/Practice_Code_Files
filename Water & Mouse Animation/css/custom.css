@@ -1,0 +1,44 @@
+.banner {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    background: #222 url(../images/header-bg.jpg) center center fixed;
+    background-size: cover;
+    padding: 200px 0;
+    text-align: center;
+}
+
+.banner:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #22222299;
+}
+
+#magic-cursor {
+    position: absolute;
+    width: 24px !important;
+    height: 24px !important;
+    pointer-events: none;
+    z-index: 1000000;
+}
+
+#ball {
+    position: fixed;
+    display: block;
+    left: 0;
+    top: 0;
+    transform: translate(-50%, -50%);
+    width: 24px !important;
+    height: 24px !important;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    pointer-events: none;
+    opacity: 1 !important;
+    filter: invert(100);
+}

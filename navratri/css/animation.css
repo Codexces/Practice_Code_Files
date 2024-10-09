@@ -1,0 +1,198 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.topphead.festivelsection {
+    background: #010d2a;
+    padding: 5px 0px;
+    display: inline-block;
+    width: 100%;
+    position: relative;
+    border-bottom: 4px solid #066400;
+    z-index: 3;
+}
+
+.animationsec {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.col-md-6:last-child .rakhiimg img {
+    float: right;
+}
+
+.rakhilist li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15px;
+    height: 2px;
+    margin: auto;
+    border-radius: 0 0 50% 50%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+.rakhisect {
+    margin: 0px auto;
+    padding: 0px;
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+.rakhiimg {
+    position: absolute;
+    left: 0px;
+    display: inline-block;
+    width: max-content;
+    top: -73px;
+    z-index: 2;
+}
+
+.rakhiimg img {
+    width: 100%;
+    margin: 0px auto;
+    animation: moveleft 5.25s ease-in infinite;
+    transform: translate(0%);
+    display: block;
+    position: relative;
+}
+
+.rakhilist {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+.rakhilist li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 3;
+}
+
+.rakhilist li:first-child img {
+    animation: moveright 5.25s ease-in infinite;
+    transform: translate(0%);
+}
+
+.rakhilist li:last-child img {
+    animation: moveleft 8.25s ease-in infinite;
+    transform: translate(0%);
+}
+
+.rakhiimg:last-child {
+    position: absolute;
+    right: 0px;
+    left: unset;
+}
+
+.backgroundimgsec {
+    padding: 0px 0px 0px;
+    margin: 0px;
+    width: 100%;
+    position: relative;
+}
+
+.festivelsection h6 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: syne, sans-serif;
+}
+
+.yellow {
+    color: #fffa24;
+}
+
+.rakhilist:before {
+    content: '';
+    position: absolute;
+    background-position: top !important;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    z-index: 9;
+}
+
+.rakhilist:before {
+    background: url("/images/left.png") no-repeat;
+}
+
+.rakhisect .rakhiimg:last-child .rakhilist:before {
+    background: url("/images/right.png") no-repeat;
+}
+
+.backgroundimgsec .imgbox {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.backgroundimgsec .imgbox img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+@keyframes moveright {
+    0%,
+    100% {
+        transform: translate(0%, 50%) rotate(-1.5deg) translate(15px, -50%);
+    }
+    25% {
+        transform: translate(0%, 50%) rotate(0deg) translate(0%, -50%);
+    }
+    50% {
+        transform: translate(0%, 50%) rotate(2.5deg) translate(-15px, -50%);
+    }
+}
+
+@keyframes moveleft {
+    0%,
+    100% {
+        transform: translate(0%, 50%) rotate(2.5deg) translate(-15px, -50%);
+    }
+    25% {
+        transform: translate(0%, 50%) rotate(0deg) translate(0%, -50%);
+    }
+    50% {
+        transform: translate(0%, 50%) rotate(-1.5deg) translate(15px, -50%);
+    }
+}
+
+@media (max-width: 1280px) {
+    .rakhiimg {
+        width: 160px;
+        top: -50px;
+        z-index: -2;
+    }
+}
+
+@media (max-width: 767px) {
+    .rakhiimg {
+        display: inline-block;
+        width: 100px;
+        top: -70px;
+        z-index: -2;
+    }
+}

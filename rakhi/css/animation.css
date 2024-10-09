@@ -1,0 +1,165 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: 'Poppins';
+}
+
+.animationsec {
+    position: fixed;
+    top: 35px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 99999;
+    pointer-events: none;
+}
+
+.col-md-6:last-child .rakhiimg img {
+    float: right;
+}
+
+.rakhilist li:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 15px;
+    height: 2px;
+    margin: auto;
+    border-radius: 0 0 50% 50%;
+    z-index: 1;
+    left: 0;
+    right: 0;
+}
+
+.rakhisect {
+    margin: 0px auto;
+    padding: 0px;
+    width: max-content;
+    height: max-content;
+}
+
+.rakhiimg {
+    position: absolute;
+    left: 15px;
+    display: inline-block;
+    width: max-content;
+}
+
+.rakhiimg img {
+    width: 100%;
+    margin: 0px auto;
+    animation: moveleft 5.25s ease-in infinite;
+    transform: translate(0%);
+    display: block;
+    position: relative;
+}
+
+.rakhilist {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px;
+    padding: 0px;
+}
+
+.rakhilist li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    z-index: 3;
+}
+
+.rakhilist li:first-child img {
+    animation: moveright 5.25s ease-in infinite;
+    transform: translate(0%);
+}
+
+.rakhilist li:last-child img {
+    animation: moveleft 8.25s ease-in infinite;
+    transform: translate(0%);
+}
+
+.rakhiimg:last-child {
+    position: absolute;
+    right: 15px;
+    left: unset;
+}
+
+.festivelsection {
+    background: #3163b9 !important;
+    padding: 5px 0px 5px;
+    margin: 0px;
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    z-index: 9999;
+}
+
+.festivelsection h6 {
+    color: #fff;
+    font-size: 16px;
+    line-height: 25px;
+    margin: 0;
+    padding: 0;
+    font-family: syne, sans-serif;
+}
+
+.yellow {
+    color: #fffa24;
+}
+
+@keyframes moveright {
+
+    0%,
+    100% {
+        transform: translate(0%, 50%) rotate(-1.5deg) translate(15px, -50%);
+    }
+
+    25% {
+        transform: translate(0%, 50%) rotate(0deg) translate(0%, -50%);
+    }
+
+    50% {
+        transform: translate(0%, 50%) rotate(2.5deg) translate(-15px, -50%);
+    }
+}
+
+@keyframes moveleft {
+
+    0%,
+    100% {
+        transform: translate(0%, 50%) rotate(2.5deg) translate(-15px, -50%);
+
+    }
+
+    25% {
+        transform: translate(0%, 50%) rotate(0deg) translate(0%, -50%);
+    }
+
+    50% {
+        transform: translate(0%, 50%) rotate(-1.5deg) translate(15px, -50%);
+
+    }
+}
+
+@media (max-width: 1280px) {
+    .rakhiimg {
+        width: 100px;
+    }
+}
+
+@media (max-width: 767px) {
+    .rakhiimg:first-child {
+        display: none;
+    }
+
+    .rakhiimg:last-child {
+        position: absolute;
+        right: unset;
+        left: 0;
+        width: 100px;
+    }
+}

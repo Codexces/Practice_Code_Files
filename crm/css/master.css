@@ -1,0 +1,86 @@
+:root {
+    --fontawscirchek: "\f058"
+}
+
+body {
+    font-family: Poppins, sans-serif;
+    background: #f2f2f2;
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+.containbody {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    padding-left: 200px;
+}
+
+.mainbody {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+.containbody.activated {
+    padding-left: 0;
+}
+
+.sitenav.activated {
+    display: none;
+}
+
+.commpadisecar {
+    margin: 10px 0px;
+    padding: 0;
+    display: inline-block;
+    width: 100%;
+}
+
+/*-- Form group --*/
+.form-group {
+    position: relative;
+    margin: 0px 0px 20px;
+    padding: 0;
+}
+
+.form-group label {
+    width: 100%;
+    margin: 0px 0px 3px;
+    font-size: 14px;
+}
+
+.form-group .form-control {
+    width: 100%;
+    height: 45px;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #222;
+}
+
+.form-group .fosavbtn {
+    margin: 0px 12px;
+    padding: 10px 50px;
+    border-radius: 4px;
+    border: unset;
+    background: #0d6efd;
+    color: #fff;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}

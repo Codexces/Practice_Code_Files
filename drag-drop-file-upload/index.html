@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- HTML Meta Tags -->
+    <title>Drag and Drop File Upload</title>
+    <link rel="icon" type="image/png" href="/images/favicon.webp" />
+    <!-- Style File -->
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/sylesheet.css">
+    <!-- Font Awesome icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+
+    <div class="filuplsys">
+        <div class="container">
+            <div class="row">
+
+                <div class="form-group">
+                    <label>Document Media</label>
+                    <div class="imagex-upload">
+                        <!-- File upload -->
+                        <input type="file" class="choose uplodingFile" name="Drop_and_down_img" multiple="multiple" />
+
+                        <!-- upload Preview-->
+                        <div id="uploadPreview">
+                        </div>
+
+                        <!-- upload msg-->
+                        <div class="uploadmsg">
+                            <p class="firstlable">
+                                <i class="fa-solid fa-arrow-up-from-bracket"></i>
+                                <span>Add Images</span> or Drop images to upload
+                            </p>
+                            <!-- Click to Upload directory images-->
+                            <div class="adlinkfildiv">
+                                <label><input type="file" class="fileuplsinimg" name="uplod_sinng_img"
+                                        multiple="multiple">
+                                    Add Files </label>
+
+                                <label><input type="file" class="directoryfileimg" name="uplod_directory_img"
+                                        multiple="multiple" webkitdirectory directory>
+                                    Add Directory Files </label>
+                                <span class="adurlform">Add Form URL</span>
+                            </div>
+
+                            <!-- Url File Uploding Section -->
+                            <div class="urlinpuform">
+                                <span class="closeurllpopup"><i class="fa-solid fa-xmark"></i></span>
+                                <div class="urlinpufor">
+                                    <input type="url" class="uplod_URl_sinng_img" name="uplod_URl_sinng_img"
+                                        placeholder="https://example.com">
+                                    <span class="sunbinpurl">Save</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- Script File -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+    <!-- Other js -->
+    <script src="/js/main.js"></script>
+
+
+</body>
+
+</html>
